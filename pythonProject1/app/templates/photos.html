@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zdjęcia</title>
+</head>
+<body>
+    <h1>Cztery Zdjęcia</h1>
+    {% for photo in photos %}
+        <div>
+            <h2>{{ photo.title }}</h2>
+            <img src="{{ photo.thumbnailUrl }}" alt="{{ photo.title }}">
+        </div>
+    {% endfor %}
+</body>
+</html>
